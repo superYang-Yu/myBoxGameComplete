@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMapActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <com.example.boxgame.GameView
+            android:id="@+id/gv_myMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0:墙 1:空 2:人 3:空箱子 4:满箱子 5:花"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/et_mapLineData"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="每个数字之间使用英文逗号分割(15位)"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_setData"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="设置第1行数据"
+        android:background="@color/colorPrimary"
+        android:onClick="addLineDate"/>
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="使用本地图"
+        android:background="@color/colorPrimary"
+        android:onClick="useMap"/>
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:text="重置地图"
+        android:onClick="againMap" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

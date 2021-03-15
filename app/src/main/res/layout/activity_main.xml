@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity"
+    android:background="@color/mainBackgroudColor">
+    <Button
+        android:id="@+id/btn_startGame"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="开始游戏"
+        android:background="@drawable/testiamge"/>
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_aboutGame"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="游戏简介"
+        android:background="@drawable/testiamge"/>
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_exitGame"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="退出游戏"
+        android:background="@drawable/testiamge"/>
+</LinearLayout>
